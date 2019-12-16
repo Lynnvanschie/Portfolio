@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Koa de Koala</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+</head>
+<body>
+	<button onclick="topFunction()" id="button" title="Go to top"><img src="img/top.png" id="top"></button>
+	<button class="down" title="go down"><a href="#concept"><img src="img/down.png" id="down"></a></button>
+
+	<ul class='navbar'>
+		<!--<li><a href="#concept">Concept</a></li>-->
+		<li><a href="#video">Dit is Koa</a></li>
+		<li><a href="#interactie">Hoe werkt Koa</a></li>
+		<li><a href="#product">Foto's</a></li>
+		<li><a href="#bestel">Bestel</a></li>
+	</ul>
+	<img src="img/header.jpg" id="header">
+	
+	<section id='concept'>
+		<h1>Koa de interactieve knuffel.</h1>
+		<p>Koa vertelt een verhaaltje voor het slapen gaan zodat uw kind ontpannend in slaap valt. </p>
+		<p>Als uw kind wakker wordt uit een nachtmerrie is koa daar om een berichtje<br> van u af te spelen en uw kind te kalmeren.</p>
+		<p>Voor een betere nacht rust voor u en uw kind.</p>
+		<div class="afbeeldingen">
+			<div class="tekst">
+				<div class="icon">
+					<img src="img/licht.png">
+				</div>
+				<h2>Licht</h2>
+				<p>Koa geeft licht af om het kind te kalmeren.</p>
+			</div>
+
+			<div class="tekst">
+				<div class="icon">
+					<img src="img/bandje.png">
+				</div>
+				<h2>Vriendschaps bandje</h2>
+				<p>Het 'vriendschaps bandje' houd de hartslag van uw kind bij.</p>
+			</div>
+
+			<div class="tekst">
+				<div class="icon">
+					<img src="img/verhaaltje.png">
+				</div>
+				<h2>Verhaaltje en berichtje</h2>
+				<p>Koa kan een verhaaltje vertellen en een berichtje van u afspelen.</p>
+			</div>
+
+			<div class="tekst">
+				<div class="icon">
+					<img src="img/app.png">
+				</div>
+				<h2>App</h2>
+				<p>In de app spreekt u een berichtje voor uw kind in.</p>
+			</div>
+	
+	</section>
+	
+	<section id='video'>
+		<h1>Dit is koa.</h1>
+
+		<video src="vid/test.mov" width="70%" height="auto" preload controls>
+		</video>
+	</section>
+
+	<section id='interactie'>
+		<h1 class="black">Hoe werkt koa.</h1>
+		<img src="img/i1.png" class="interactie">
+		<img src="img/i2.png" class="interactie">
+		<img src="img/i3.png" class="interactie">
+	</section>
+
+	<section id='product'>
+		<h1>Foto's.</h1>
+		<!-- https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+			<div class="w3-content">
+				 <div class="slides">
+					<img class="mySlides" src="img/afb1.jpg" style="display:block">
+					<img class="mySlides" src="img/afb2.jpg">
+					<img class="mySlides" src="img/afb3.jpg">
+					<img class="mySlides" src="img/afb4.jpg">
+					<img class="mySlides" src="img/afb5.jpg">
+					<img class="mySlides" src="img/afb6.jpg">
+				</div>	
+
+			  <div class="w3-row-padding w3-section">
+			    <div class="w3-col s4">
+			      <img class="w3-opacity w3-hover-opacity-off" src="img/afb1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+			    </div>
+			    <div class="w3-col s4">
+			      <img class="w3-opacity w3-hover-opacity-off" src="img/afb2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+			    </div>
+			    <div class="w3-col s4">
+			      <img class="w3-opacity w3-hover-opacity-off" src="img/afb3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+			    </div>
+			    <div class="w3-col s4">
+			      <img class="w3-opacity w3-hover-opacity-off" src="img/afb4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+			    </div>
+			    <div class="w3-col s4">
+			      <img class="w3-opacity w3-hover-opacity-off" src="img/afb5.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+			    </div>
+			    <div class="w3-col s4">
+			      <img class="w3-opacity w3-hover-opacity-off" src="img/afb6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+			    </div>
+			  </div>
+			</div>
+	</section>
+
+	<section id='bestel'>
+		<h1 class="black">Bestel koa.</h1>
+		<img src="img/bestel.jpg">
+		<a href="#" id="order">bestel</a>
+	</section>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

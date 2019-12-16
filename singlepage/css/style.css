@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Manrope-Medium;
+  src: url(fonts/manrope-medium.otf);
+}
+
+@font-face {
+  font-family: Manrope-light;
+  src: url(fonts/manrope-light.otf);
+}
+
+*{
+	margin: 0px;
+	box-sizing:inherit;
+	box-sizing:border-box;
+}
+
+
+body{
+	/*background-color: rgb(230, 234, 239);*/
+	background-color: rgb(30, 34, 35);
+}
+
+
+h1{
+	font-family: Manrope-Medium, sans-serif;
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: 50px;
+	color: white;
+}
+
+h2{
+	font-family: Manrope-Medium, sans-serif;
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	margin-top: 40px;
+}
+
+p{
+	font-family: Manrope-light, sans-serif;
+	font-size: 23px;
+	padding: 20px 0px 0px 0px;
+	color: white;
+	text-align: center;
+}
+/* Back to top knop*/
+#button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 1000px;
+  padding: 0px;
+}
+
+#button:hover {
+  background-color: grey;
+}
+
+#top{
+	width: 50px;
+}
+
+/* CSS Navbar*/
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: absolute;
+	width: 96%;
+	z-index: 1;
+}
+
+li{
+	margin: 40px;
+	list-style: none;
+	font-family: Manrope-Medium, sans-serif;
+	font-size: 30px;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: black;
+}
+
+.navbar a:hover{
+	color: rgb(169, 162, 152);
+}
+
+#header{
+	width: 100%;
+	z-index: 2;
+}
+
+.down{
+  	position: absolute;
+  	z-index: 99;
+  	border: none;
+  	outline: none;
+  	background-color: transparent;
+  	cursor: pointer;
+  	padding: 0px;
+  	margin: 670px 0px 0px 670px;
+}
+
+.down img{
+	width: 100px;
+}
+
+/* Concept */
+#concept{
+	margin: 70px 20px 0px 20px;
+}
+
+.afbeeldingen{
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.afbeeldingen img{
+	width: 250px;
+	height: auto;
+	margin:0;
+	padding:0;
+}
+
+.icon{
+	border: 1px solid white;
+	border-radius: 1000px;
+	padding: 5px 5px 2px 5px;
+	background: white;
+	margin: 10px 50px 20px 50px;
+}
+
+.afbeeldingen h1{
+	margin: 70px 0px 0px 0px;
+	padding: 0px;
+}
+
+.afbeeldingen h2{
+	font-size: 23px;
+	margin: 50px 0px 30px 0px;
+}
+
+.afbeeldingen p{
+	font-size: 20px;
+	padding: 0px 20px;
+}
+
+/* Video */
+video{
+	display: block;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+#video{
+	padding-top: 150px;
+	padding-bottom: 40px;
+}
+
+/* Interactie */
+#interactie{
+	background-color: rgb(230, 234, 239);
+	padding: 70px 0px 40px 50px;
+}
+
+.interactie{
+	height: 320px;
+	width: auto;
+	background-color: white;
+}
+
+.black{
+	color: black;
+}
+
+/* Image Slider */
+#product{
+	padding: 70px 0px 150px 0px;
+}
+
+.w3-content{
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 70%;
+}
+
+.mySlides {
+	display:none;
+	width: 100%;
+	display: none;
+	padding-bottom: 10px;
+}
+
+.w3-col{
+	float:left;
+	width:100%;
+	padding-bottom: 40px;
+}
+
+.w3-col.s4{
+	width:16.6666667%
+}
+
+.w3-opacity{
+	/*filter: grayscale(100%);*/
+	opacity: 0.5;
+}
+
+.w3-hover-opacity-off:hover{
+	/*filter: none;*/
+	opacity: 1.0;
+}
+
+/* Bestel */
+#bestel{
+	background-color: rgb(230, 234, 239);
+	padding: 70px 0px 40px 0px;
+}
+
+#bestel img{
+	width: 500px;
+	padding-left: 100px;
+}
+
+#order{
+	background-color: rgb(30, 34, 35);
+	position: absolute;
+	color: white;
+	font-family: Manrope-Medium, sans-serif;
+	font-size: 30px;
+	text-decoration: none;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 50px 0px 0px 50px;
+}
+
+#order:hover{
+	background-color: white;
+	color:rgb(30, 34, 35);
+}
+
