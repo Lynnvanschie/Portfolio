@@ -1,0 +1,359 @@
+@font-face {
+  font-family: 'WorkSans';
+  src: url(fonts/WorkSans-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face{
+	font-family: 'WorkSans';
+	src: url(fonts/WorkSans-Regular.ttf);
+	font-weight: 300;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url(fonts/WorkSans-Medium.ttf);
+  font-weight: 500;
+}
+
+*{
+	margin: 0px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #cfd7e1;
+	font-family: 'WorkSans', sans-serif;
+	font-weight: 200;
+}
+
+section{
+	padding: 8rem 8rem 0rem 8rem;
+}
+
+h1{
+	font-size: 3em;
+	padding-bottom: 4rem;
+}
+
+h2{
+	margin: 2rem 0 1rem 0;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+/*Header*/
+header img{
+	width: 100vw;
+	position: relative;
+	object-fit: cover;
+	height: 100vh;
+}
+
+header p{
+	position: absolute;
+	bottom: 1rem;
+	right: 5vw;
+	font-size: 'WorkSans', sans-serif;
+	font-weight: 500;
+	font-size: 8vw;
+	color: #4e5a6a;
+}
+
+/* CSS Navbar*/
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	position: fixed;
+	width: 100vw;
+	background-color: white;
+	box-shadow: 0px 5px 5px #888888;
+	padding: 1.5rem;
+	z-index: 3;
+}
+
+nav div{
+	display: flex;
+	margin-left: auto;
+}
+
+nav li{
+	list-style: none;
+	font-family: 'WorkSans-Light', sans-serif;
+	font-size: 2em;
+}
+
+nav div li{
+	padding: 0 1rem;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+	position: relative;
+}
+
+nav div a::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background: black;
+	transform-origin: bottom right;
+	transition: transform 0.5s ease;
+	/*color: #4e5a69;
+	border-bottom: 1.5px solid #4e5a69;*/
+}
+
+nav div a:hover::before, nav div a:focus::before{
+	transform: scaleX(1);
+	transform-origin: bottom right;
+}
+
+nav div a:focus{
+	outline: none;
+}
+
+#left{
+	font-family: 'WorkSans', sans-serif;
+	font-weight: 500;
+	font-size: 0.8em;
+	border: 1.5px solid #143766;
+	color: #143766;
+	padding: 0.3rem;
+	transition: color .2s ease-in, border-color .5s ease-in;
+}
+
+#left:hover, #left:focus{
+	color: #23ADE8;
+	border-color: #23ADE8;
+	outline: none;
+}
+
+/* About */
+#about .container{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 2rem 5rem;
+}
+ 
+#about .one{
+	grid-row-start: span 2;
+}
+
+#about img{
+	width:25vw;
+}
+
+#about .two{
+	font-size: 1.5rem;
+}
+
+#about .three{
+	grid-column-start: 2;
+}
+
+/* Work */
+#work .container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+	grid-gap: 4rem;
+	margin-bottom: 8rem;
+}
+
+#work a{
+	text-decoration: none;
+	color:black;
+	position: relative;
+}
+
+#work img{
+	object-fit: cover;
+	max-width: 100%;
+	height: 30em;	
+	/*filter: grayscale(100%);*/
+	opacity: 0.3;
+	transition: opacity 0.5s ease;
+}
+
+#work .caption{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 4rem 2rem;
+}
+
+#work h2{
+	font-size: 2em;
+	margin-bottom: 1rem;
+}
+
+#work h3{
+	color: #23ADE8;
+	font-size: 1.5em;
+}
+
+#work a:hover img{
+	opacity: 0.7;
+}
+
+#work a:hover h3{
+	color: #143766;
+}
+
+/*Contact*/
+#contact{
+	padding-bottom: 10rem;
+	background-image: url('../img/backdropwhite.jpg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#contact article{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#contact p{
+	max-width: 15em;
+	margin-right: 2rem;
+	margin-bottom: 4rem;
+}
+
+#contact h2{
+ 	font-size: 2em;
+ 	padding-bottom: 1.5rem;
+}
+
+#contact a{
+	display: block;
+	padding-bottom: 2rem;
+	font-size: 1.6em;
+	font-weight: 300;
+	color: #143766;
+	text-decoration: none;
+	transition: color .3s ease;
+}
+
+#contact a:hover, #contact a:focus{
+	color: #23ADE8;
+	
+}
+
+/* Projecten */
+.projectpagina img{
+	width: 100%;
+	padding-bottom: 4rem;
+}
+
+.projectpagina h1{
+	margin-top: 4rem;
+}
+
+.projectpagina .container{
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-gap: 5rem;
+}
+
+.projectpagina article{
+	margin-bottom: 4rem;
+}
+
+.projectpagina .container a{
+	font-size: 1.5em;
+	border: 2px solid white;
+	padding: 0.5rem;
+	color: black;
+	display: inline-block;
+	margin: 0.5rem 0;
+	border-radius: 10px;
+	text-decoration: none;
+	background-color: white;
+	transition: background-color .5s ease;
+}
+
+.projectpagina .container a:hover{
+	background-color: #cfd7e1;
+}
+
+
+@media (max-width: 60em) {
+	section{ 
+		padding: 10rem 4rem 0 4rem; 
+	}
+
+	#about .container{
+		grid-column-gap: 3rem;
+	}
+
+	#about .one{
+		grid-row-start: span 1;
+	}
+
+	#about img{
+		width:30vw;
+	}
+
+	#about .two{
+		font-size: 2.7vw;
+	}
+
+	#about .three{
+		grid-column-start: span 2;
+	}
+
+	.projectpagina .container{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width: 40em){
+ 	nav li{
+ 		padding-bottom: 1.5rem;
+ 		font-size: 1.5em;
+ 	}
+
+ 	nav ul{
+ 		padding-bottom: 1rem;
+ 	}
+
+ 	header p{
+ 		font-size: 15vw;
+ 	}
+}
+
+@media (max-width: 33em){
+	#about .container{
+ 		grid-template-columns: 1fr;
+ 		grid-gap: 2rem 0;
+	}
+
+ 	#about .one{
+ 		grid-column-start: span 2;
+ 		margin: auto;
+ 	}
+
+ 	#about img{
+		width:60vw;
+ 	}
+
+ 	#about p{
+ 		font-size: 1.3em;
+ 	}
+
+ 	#about .two{
+ 		font-size: 1rem;
+ 	}
+}
